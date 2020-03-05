@@ -58,6 +58,7 @@
 
     const transformFns = {
       "data-lax-opacity": (style, v) => { style.opacity = v },
+      "data-lax-fill-opacity": (style, v) => { style.fillOpacity = v },
       "data-lax-translate": (style, v) => { style.transform += ` translate(${v}px, ${v}px)` },
       "data-lax-translate-x": (style, v) => { style.transform += ` translateX(${v}px)` },
       "data-lax-translate-y": (style, v) => { style.transform += ` translateY(${v}px)` },
@@ -220,7 +221,7 @@
     }
 
     lax.removeElement = (el) => {
-      const i = lax.elements.findIndex(o => o.el = el)
+      const i = lax.elements.findIndex(o => o.el === el)
       if(i > -1) {
         lax.elements.splice(i, 1)
       }

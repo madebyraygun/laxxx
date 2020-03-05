@@ -27,7 +27,7 @@ import lax from 'lax.js'
 ```html
 <script src="lib/lax.min.js" >
 <!-- or via CDN -->
-<script src="https://cdn.jsdelivr.net/npm/lax.js" >
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
 ```
 
 2) Initialize the plugin
@@ -206,6 +206,7 @@ Transforms
 | Transform     | Key           |
 | ------------- | ------------- |
 | opacity       | data-lax-opacity  |
+| fill-opacity	| data-lax-fill-opacity  |
 | translate     | data-lax-translate |
 | translateX     | data-lax-translate-x |
 | translateY     | data-lax-translate-y |
